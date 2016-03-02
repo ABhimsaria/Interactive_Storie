@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleimageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/main_title"
+        android:layout_alignParentEnd="false"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="Signals from Mars"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START YOUR ADVENTURE"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/titleimageView"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true"
+        android:hint="Enter Your Name to Begin!"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:layout_above="@+id/startButton"
+        android:layout_alignStart="@+id/titleimageView"
+        android:maxLength="30" />
+</RelativeLayout>
